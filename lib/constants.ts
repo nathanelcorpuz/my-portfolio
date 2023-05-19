@@ -38,3 +38,18 @@ export const skillsOverview: ListContent[] = [
 		],
 	},
 ];
+
+export const technologies = [
+	"HTML",
+	"CSS",
+	"JavaScript",
+	"React.js",
+	"Next.js",
+	"MongoDB",
+	"Mongoose",
+	"Node.js",
+	"Express.js",
+	"REST API",
+	"React Query",
+	"Tailwind CSS",
+];
