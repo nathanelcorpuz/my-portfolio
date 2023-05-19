@@ -1,11 +1,11 @@
 import Hero from "./_components/Hero";
-import HowIWork from "./_components/HowIWork";
+import SkillsOverview from "./_components/SkillsOverview";
 
 export default function Home() {
 	return (
 		<div className="flex flex-col gap-[100px]">
 			<Hero />
-			<HowIWork />
+			<SkillsOverview />
 		</div>
 	);
 }
