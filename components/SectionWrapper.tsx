@@ -1,9 +1,17 @@
+import { GapSize } from "@/types/types";
+
 export default function SectionWrapper({
   children,
-  gap = "30px",
+  gapSize = "sm",
 }: {
   children: React.ReactNode;
-  gap?: string;
+  gapSize: GapSize;
 }) {
-  return <section className={`flex flex-col gap-[${gap}]`}>{children}</section>;
+  if (gapSize === "md") {
+    return <section className="flex flex-col gap-[50px]">{children}</section>;
+  }
+  if (gapSize === "lg") {
+    return <section className="flex flex-col gap-[100px]">{children}</section>;
+  }
+  return <section className="flex flex-col gap-[25px]">{children}</section>;
 }

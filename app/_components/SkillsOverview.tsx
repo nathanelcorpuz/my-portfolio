@@ -6,12 +6,12 @@ import SectionWrapper from "@/components/SectionWrapper";
 import { skillsOverview as skills } from "@/lib/constants";
 
 function SkillWrapper({ children }: { children: React.ReactNode }) {
-  return <div className="flex flex-col gap-[30px]">{children}</div>;
+  return <div className="flex flex-col gap-[25px]">{children}</div>;
 }
 
 export default function SkillsOverview() {
   return (
-    <SectionWrapper gap="70px">
+    <SectionWrapper gapSize="lg">
       {skills.map((skill) => (
         <SkillWrapper key={skill.title}>
           <HeadingText>{skill.title}</HeadingText>
