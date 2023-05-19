@@ -1,4 +1,4 @@
-export default function MainWrapper({
+export default function RootLayoutWrapper({
 	children,
 }: {
 	children: React.ReactNode;
