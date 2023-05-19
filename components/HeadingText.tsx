@@ -7,7 +7,7 @@ export default function HeadingText({
 	children: React.ReactNode;
 	variant?: HeadingTextVariant;
 }) {
-	const common = "font-bold uppercase";
+	const common = "font-black uppercase";
 	if (variant === 2) {
 		return <h1 className={`text-xl xl:text-2xl ${common}`}>{children}</h1>;
 	}
