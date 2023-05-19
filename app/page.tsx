@@ -1,3 +1,4 @@
+import Button from "@/components/Button";
 import HeadingText from "@/components/HeadingText";
 import StandardText from "@/components/StandardText";
 
@@ -19,7 +20,7 @@ export default function Home() {
           </p>
         </section>
         <section>
-          <button>Projects</button>
+          <Button>Projects</Button>
         </section>
       </section>
     </div>
