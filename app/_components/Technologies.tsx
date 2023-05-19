@@ -5,16 +5,16 @@ import SectionWrapper from "@/components/SectionWrapper";
 import { technologies } from "@/lib/constants";
 
 export default function Technologies() {
-	return (
-		<SectionWrapper>
-			<HeadingText>Technologies</HeadingText>
-			<BulletedListWrapper>
-				{technologies.map((tech) => (
-					<BulletedListItem key={tech} emoji="⚙️">
-						{tech}
-					</BulletedListItem>
-				))}
-			</BulletedListWrapper>
-		</SectionWrapper>
-	);
+  return (
+    <SectionWrapper>
+      <HeadingText>Technologies</HeadingText>
+      <BulletedListWrapper>
+        {technologies.map((tech) => (
+          <BulletedListItem key={tech} emoji="⚙️">
+            {tech}
+          </BulletedListItem>
+        ))}
+      </BulletedListWrapper>
+    </SectionWrapper>
+  );
 }

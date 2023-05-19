@@ -1,7 +1,7 @@
 export default function BulletedListWrapper({
-	children,
+  children,
 }: {
-	children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-	return <ul className="flex flex-col gap-[10px]">{children}</ul>;
+  return <ul className="flex flex-col gap-[10px]">{children}</ul>;
 }
