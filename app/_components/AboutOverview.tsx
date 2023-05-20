@@ -1,3 +1,4 @@
+import Button from "@/components/Button";
 import HeadingText from "@/components/HeadingText";
 import SectionWrapper from "@/components/SectionWrapper";
 import StandardText from "@/components/StandardText";
@@ -10,6 +11,9 @@ export default function AboutOverview() {
       {aboutOverview.map((item) => (
         <StandardText key={item}>{item}</StandardText>
       ))}
+      <div>
+        <Button variant={2}>Read more</Button>
+      </div>
     </SectionWrapper>
   );
 }
