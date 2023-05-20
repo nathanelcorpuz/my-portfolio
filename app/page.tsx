@@ -1,3 +1,4 @@
+import AboutOverview from "./_components/AboutOverview";
 import Hero from "./_components/Hero";
 import ProjectsOverview from "./_components/ProjectsOverview";
 import SkillsOverview from "./_components/SkillsOverview";
@@ -10,6 +11,7 @@ export default function Home() {
       <SkillsOverview />
       <Technologies />
       <ProjectsOverview />
+      <AboutOverview />
     </div>
   );
 }

@@ -155,3 +155,10 @@ export const projects: Project[] = [
     ],
   },
 ];
+
+export const aboutOverview: string[] = [
+  "I'm a 28-year old full stack web developer from the Philippines.",
+  "I saved just enough from 8 years of customer service to transition to web development on February 2021 to follow my dream of becoming a programmer.",
+  "Web development is my chosen profession because it makes me feel like an explorer due to its plethora of branches. I also get to deal with logic and creativity on a daily basis, and its an exciting field because it seems to be a new industry in the history of mankind and it evolves everyday.",
+  "My long term career goal is to have a stable income and enough savings to sustain my dream of traveling the world.",
+];
