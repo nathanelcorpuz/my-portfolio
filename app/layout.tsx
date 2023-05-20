@@ -1,3 +1,4 @@
+import Footer from "./_components/Footer";
 import LayoutContact from "./_components/LayoutContact";
 import RootLayoutWrapper from "./_components/RootLayoutWrapper";
 import "./globals.css";
@@ -21,6 +22,7 @@ export default function RootLayout({
         <RootLayoutWrapper>
           {children}
           <LayoutContact />
+          <Footer />
         </RootLayoutWrapper>
       </body>
     </html>
