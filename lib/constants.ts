@@ -1,4 +1,4 @@
-import { ListContent, Project } from "@/types/types";
+import { ListContent, Project, Socials } from "@/types/types";
 
 export const skillsOverview: ListContent[] = [
   {
@@ -161,4 +161,22 @@ export const aboutOverview: string[] = [
   "I saved just enough from 8 years of customer service to transition to web development on February 2021 to follow my dream of becoming a programmer.",
   "Web development is my chosen profession because it makes me feel like an explorer due to its plethora of branches. I also get to deal with logic and creativity on a daily basis, and its an exciting field because it seems to be a new industry in the history of mankind and it evolves everyday.",
   "My long term career goal is to have a stable income and enough savings to sustain my dream of traveling the world.",
+];
+
+export const contact: string[] = [
+  "If you're interested in hiring me or working with me, please feel free to let me know via nathanelcorpuz@gmail.com",
+  "You can also follow me socially via the links below:",
+];
+
+export const socials: Socials = [
+  {
+    text: "LinkedIn",
+    href: "https://www.linkedin.com/in/nathanelcorpuz/",
+    isNewTab: true,
+  },
+  {
+    text: "Twitter",
+    href: "https://twitter.com/nathanelcorpuz",
+    isNewTab: true,
+  },
 ];

@@ -4,7 +4,7 @@ export default function RootLayoutWrapper({
   children: React.ReactNode;
 }) {
   return (
-    <div className="max-w-[550px] sm:max-w-[800px] lg:max-w-[1200px] xl:max-w-[1500px] p-4">
+    <div className="max-w-[550px] sm:max-w-[800px] lg:max-w-[1200px] xl:max-w-[1500px] p-4 flex flex-col gap-[100px]">
       {children}
     </div>
   );

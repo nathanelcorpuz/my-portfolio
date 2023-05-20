@@ -26,3 +26,5 @@ export interface Project {
   devNotes: string[];
   links: LinkContent[];
 }
+
+export type Socials = LinkContent[];

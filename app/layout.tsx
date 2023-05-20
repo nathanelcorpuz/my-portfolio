@@ -1,3 +1,4 @@
+import LayoutContact from "./_components/LayoutContact";
 import RootLayoutWrapper from "./_components/RootLayoutWrapper";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -17,7 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <RootLayoutWrapper>{children}</RootLayoutWrapper>
+        <RootLayoutWrapper>
+          {children}
+          <LayoutContact />
+        </RootLayoutWrapper>
       </body>
     </html>
   );
