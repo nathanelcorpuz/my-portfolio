@@ -42,15 +42,28 @@ export default function LayoutHeader() {
             <StandardText variant={3}>Close</StandardText>
           </div>
           <div className="flex flex-col items-center">
-            {headerLinks.map((link) => (
-              <LinkText
-                linkProps={{ onClick: () => setIsMenuOpen(false) }}
-                key={link.href}
-                href={link.href}
-              >
-                {link.text}
-              </LinkText>
-            ))}
+            {headerLinks.map((link) =>
+              link.text === "Contact" ? (
+                <LinkText
+                  key={link.href}
+                  href="#contact"
+                  isNativeAnchor
+                  anchorProps={{
+                    onClick: () => setIsMenuOpen(false),
+                  }}
+                >
+                  {link.text}
+                </LinkText>
+              ) : (
+                <LinkText
+                  linkProps={{ onClick: () => setIsMenuOpen(false) }}
+                  key={link.href}
+                  href={link.href}
+                >
+                  {link.text}
+                </LinkText>
+              )
+            )}
           </div>
         </div>
       ) : null}

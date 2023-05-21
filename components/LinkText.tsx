@@ -17,7 +17,8 @@ export default function LinkText({
   if (isNativeAnchor) {
     return (
       <a
-        className="uppercase font-light underline underline-offset-8 tracking-widest"
+        className="uppercase font-light underline underline-offset-8 tracking-widest
+        py-2 inline-block"
         href={href}
         {...anchorProps}
       >

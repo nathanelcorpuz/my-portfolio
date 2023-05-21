@@ -232,7 +232,7 @@ export const headerLinks: LinkContent[] = [
   },
   {
     text: "Contact",
-    href: "/contact",
+    href: "#",
     isNewTab: false,
   },
 ];

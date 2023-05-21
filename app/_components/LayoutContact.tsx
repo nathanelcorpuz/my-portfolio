@@ -6,7 +6,7 @@ import { contact, socials } from "@/lib/constants";
 
 export default function LayoutContact() {
   return (
-    <SectionWrapper>
+    <SectionWrapper props={{ id: "contact" }}>
       <HeadingText>Contact</HeadingText>
       {contact.map((item) => (
         <StandardText key={item}>{item}</StandardText>
