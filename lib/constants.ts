@@ -60,26 +60,40 @@ export const projects: Project[] = [
     title: "League of Legends home page",
     description:
       "A recreation of League of Legends' home page that highlights my ability to convert mockups to frontend code",
-    mainFeatures: [
-      "Smooth and interactive UI",
-      "Purposeful animations and element designs",
-      "Auto-playing video background",
-      "A uniquely directed and edited in-game looping video",
-      "High quality assets from Riot Games",
-      "Organized GitHub ReadMe documentation",
-      "Viewable on all devices",
-    ],
-    skillsHoned: [
-      "Creating high quality mockups with Figma",
-      "Customizing and extending theme with Tailwind CSS",
-      "Developing a custom UI component library with JSX",
-      "Responsive design",
-    ],
-    toolsUsed: ["Figma", "Next.js App Router", "Tailwind CSS", "Vercel"],
-    devNotes: [
-      "Used League Director and Premiere Pro to shoot and edit the looped video in the “Slay with Style” section",
-      "This project also highlights my ability to incorporate non-coding skills in web development projects such as video editing and image editing",
-      "I highly recommend checking out the GitHub ReadMe of this project if you want to see more information about how I built the project",
+    details: [
+      {
+        title: "Main Features",
+        items: [
+          "Smooth and interactive UI",
+          "Purposeful animations and element designs",
+          "Auto-playing video background",
+          "A uniquely directed and edited in-game looping video",
+          "High quality assets from Riot Games",
+          "Organized GitHub ReadMe documentation",
+          "Viewable on all devices",
+        ],
+      },
+      {
+        title: "Skills Honed",
+        items: [
+          "Creating high quality mockups with Figma",
+          "Customizing and extending theme with Tailwind CSS",
+          "Developing a custom UI component library with JSX",
+          "Responsive design",
+        ],
+      },
+      {
+        title: "Tools Used",
+        items: ["Figma", "Next.js App Router", "Tailwind CSS", "Vercel"],
+      },
+      {
+        title: "Dev Notes",
+        items: [
+          "Used League Director and Premiere Pro to shoot and edit the looped video in the “Slay with Style” section",
+          "This project also highlights my ability to incorporate non-coding skills in web development projects such as video editing and image editing",
+          "I highly recommend checking out the GitHub ReadMe of this project if you want to see more information about how I built the project",
+        ],
+      },
     ],
     links: [
       {
@@ -104,37 +118,51 @@ export const projects: Project[] = [
     title: "Mealer",
     description:
       "A web app for planning weekly meals and managing recipes that highlights my ability to build a full stack Next.js application",
-    mainFeatures: [
-      "Simple and minimalist UI",
-      "Easily view your meals for today, tomorrow, and for the week from the home page",
-      "Add, view, edit, or delete recipes from the recipes page",
-      "Add, view, edit, or delete meals from the meals page",
-      "Add notes to your recipes or meals",
-      "Simple username/password-based authentication",
-      "Usable on all devices",
-    ],
-    skillsHoned: [
-      "Developing a custom JSX UI library",
-      "Developing scalable data interaction and modeling with Mongoose",
-      "Purposeful frontend and backend types with TypeScript",
-      "Creating an http-only cookie-based JWT authentication and authorization",
-      "Integrating backend APIs and serverless database connection",
-      "Utilizing external npm libraries for client-side requirements (password-validator / slugify)",
-      "Fixing production errors in hosted environment (via Vercel)",
-    ],
-    toolsUsed: [
-      "Next.js App Router",
-      "TypeScript",
-      "Tailwind CSS",
-      "TanStack React Query",
-      "Mongoose",
-      "MongoDB Atlas",
-      "Vercel",
-    ],
-    devNotes: [
-      "This is by far the project that I feel proudest about since I was able to launch it with very minimal features, yet it does its main purpose, which is to plan weekly meals and manage recipes for users!",
-      "One of my favorite parts of this project is the GitHub ReadMe. For some reason, I really enjoy creating and organizing a ReadMe page and particularly enjoyed this one more than the previous project.",
-      "Don't forget to check future features to be implemented soon and additional project information in the GitHub ReadMe!",
+    details: [
+      {
+        title: "Main Features",
+        items: [
+          "Simple and minimalist UI",
+          "Easily view your meals for today, tomorrow, and for the week from the home page",
+          "Add, view, edit, or delete recipes from the recipes page",
+          "Add, view, edit, or delete meals from the meals page",
+          "Add notes to your recipes or meals",
+          "Simple username/password-based authentication",
+          "Usable on all devices",
+        ],
+      },
+      {
+        title: "Skills Honed",
+        items: [
+          "Developing a custom JSX UI library",
+          "Developing scalable data interaction and modeling with Mongoose",
+          "Purposeful frontend and backend types with TypeScript",
+          "Creating an http-only cookie-based JWT authentication and authorization",
+          "Integrating backend APIs and serverless database connection",
+          "Utilizing external npm libraries for client-side requirements (password-validator / slugify)",
+          "Fixing production errors in hosted environment (via Vercel)",
+        ],
+      },
+      {
+        title: "Tools Used",
+        items: [
+          "Next.js App Router",
+          "TypeScript",
+          "Tailwind CSS",
+          "TanStack React Query",
+          "Mongoose",
+          "MongoDB Atlas",
+          "Vercel",
+        ],
+      },
+      {
+        title: "Dev Notes",
+        items: [
+          "This is by far the project that I feel proudest about since I was able to launch it with very minimal features, yet it does its main purpose, which is to plan weekly meals and manage recipes for users!",
+          "One of my favorite parts of this project is the GitHub ReadMe. For some reason, I really enjoy creating and organizing a ReadMe page and particularly enjoyed this one more than the previous project.",
+          "Don't forget to check future features to be implemented soon and additional project information in the GitHub ReadMe!",
+        ],
+      },
     ],
     links: [
       {

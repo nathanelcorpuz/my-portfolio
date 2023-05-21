@@ -4,18 +4,23 @@ import LinkText from "@/components/LinkText";
 import StandardText from "@/components/StandardText";
 import { headerLinks } from "@/lib/constants";
 import { useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import capitalize from "@/lib/capitalize";
 
 export default function LayoutHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname().slice(1);
+  const router = useRouter();
   return (
     <>
       <header
-        className="flex justify-between 
+        className="fixed w-[100%] z-[100] bg-black flex justify-between 
       border-b border-b-gray-500 items-center"
       >
-        <div className="p-2">
+        <div className="p-2" onClick={() => router.push("/")}>
           <StandardText>NC</StandardText>
         </div>
+        <StandardText>{capitalize(pathname)}</StandardText>
         <div onClick={() => setIsMenuOpen(true)} className="p-2">
           <StandardText variant={3}>Menu</StandardText>
         </div>

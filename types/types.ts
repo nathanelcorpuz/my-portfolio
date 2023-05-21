@@ -20,9 +20,6 @@ export interface Project {
   slug: string;
   title: string;
   description: string;
-  mainFeatures: string[];
-  skillsHoned: string[];
-  toolsUsed: string[];
-  devNotes: string[];
+  details: ListContent[];
   links: LinkContent[];
 }
