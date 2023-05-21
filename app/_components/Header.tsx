@@ -34,7 +34,13 @@ export default function LayoutHeader() {
           </div>
           <div className="flex flex-col items-center">
             {headerLinks.map((link) => (
-              <LinkText href={link.href}>{link.text}</LinkText>
+              <LinkText
+                linkProps={{ onClick: () => setIsMenuOpen(false) }}
+                key={link.href}
+                href={link.href}
+              >
+                {link.text}
+              </LinkText>
             ))}
           </div>
         </div>

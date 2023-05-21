@@ -6,11 +6,12 @@ export default function LinkText({
   href,
   isNativeAnchor,
   anchorProps,
-  ...props
+  linkProps,
 }: {
   children: React.ReactNode;
   href: string;
   anchorProps?: AnchorHTMLAttributes<HTMLAnchorElement>;
+  linkProps?: AnchorHTMLAttributes<HTMLAnchorElement>;
   isNativeAnchor?: boolean;
 }) {
   if (isNativeAnchor) {
@@ -26,8 +27,8 @@ export default function LinkText({
   }
   return (
     <Link
-      className="uppercase font-light underline underline-offset-8 tracking-widest py-2"
-      {...props}
+      className="uppercase font-light underline underline-offset-8 tracking-widest py-2 block"
+      {...linkProps}
       href={href}
     >
       {children}
