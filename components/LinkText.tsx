@@ -26,7 +26,7 @@ export default function LinkText({
   }
   return (
     <Link
-      className="uppercase font-light underline underline-offset-8 tracking-widest"
+      className="uppercase font-light underline underline-offset-8 tracking-widest py-2"
       {...props}
       href={href}
     >

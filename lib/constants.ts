@@ -1,4 +1,4 @@
-import { ListContent, Project, Socials } from "@/types/types";
+import { LinkContent, ListContent, Project } from "@/types/types";
 
 export const skillsOverview: ListContent[] = [
   {
@@ -168,7 +168,7 @@ export const contact: string[] = [
   "You can also follow me socially via the links below:",
 ];
 
-export const socials: Socials = [
+export const socials: LinkContent[] = [
   {
     text: "LinkedIn",
     href: "https://www.linkedin.com/in/nathanelcorpuz/",
@@ -178,5 +178,33 @@ export const socials: Socials = [
     text: "Twitter",
     href: "https://twitter.com/nathanelcorpuz",
     isNewTab: true,
+  },
+];
+
+export const headerLinks: LinkContent[] = [
+  {
+    text: "Home",
+    href: "/",
+    isNewTab: false,
+  },
+  {
+    text: "About",
+    href: "/about",
+    isNewTab: false,
+  },
+  {
+    text: "Projects",
+    href: "/projects",
+    isNewTab: false,
+  },
+  {
+    text: "Skills",
+    href: "/skills",
+    isNewTab: false,
+  },
+  {
+    text: "Contact",
+    href: "/contact",
+    isNewTab: false,
   },
 ];
