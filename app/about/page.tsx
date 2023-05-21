@@ -1,3 +1,4 @@
+import HeadingText from "@/components/HeadingText";
 import PageContentWrapper from "@/components/PageContentWrapper";
 import SectionWrapper from "@/components/SectionWrapper";
 import StandardText from "@/components/StandardText";
@@ -8,14 +9,14 @@ export default function About() {
     <PageContentWrapper>
       <SectionWrapper>
         <StandardText>{about.description}</StandardText>
-        {about.items.map((item) => (
-          <div key={item.heading} className=" flex flex-col gap-[10px]">
-            <div className="font-bold">
-              <StandardText variant={1}>{item.heading}</StandardText>
-            </div>
-            <StandardText>{item.description}</StandardText>
-          </div>
-        ))}
+      </SectionWrapper>
+      {about.items.map((item) => (
+        <SectionWrapper key={item.heading}>
+          <HeadingText>{item.heading}</HeadingText>
+          <StandardText>{item.description}</StandardText>
+        </SectionWrapper>
+      ))}
+      <SectionWrapper>
         <StandardText>{about.endDescription}</StandardText>
       </SectionWrapper>
     </PageContentWrapper>

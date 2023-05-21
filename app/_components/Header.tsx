@@ -20,7 +20,11 @@ export default function LayoutHeader() {
         <div className="p-2" onClick={() => router.push("/")}>
           <StandardText>NC</StandardText>
         </div>
-        <StandardText>{capitalize(pathname)}</StandardText>
+        <div className="font-bold uppercase">
+          <a href="#">
+            <StandardText>{capitalize(pathname)}</StandardText>
+          </a>
+        </div>
         <div onClick={() => setIsMenuOpen(true)} className="p-2">
           <StandardText variant={3}>Menu</StandardText>
         </div>
