@@ -23,3 +23,14 @@ export interface Project {
   details: ListContent[];
   links: LinkContent[];
 }
+
+export interface StandardSectionItem {
+  heading: string;
+  description: string;
+}
+
+export interface AboutContent {
+  description: string;
+  items: StandardSectionItem[];
+  endDescription: string;
+}

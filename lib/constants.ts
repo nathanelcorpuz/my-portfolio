@@ -1,4 +1,4 @@
-import { LinkContent, ListContent, Project } from "@/types/types";
+import { AboutContent, LinkContent, ListContent, Project } from "@/types/types";
 
 export const skillsOverview: ListContent[] = [
   {
@@ -298,3 +298,27 @@ export const skills: ListContent[] = [
     ],
   },
 ];
+
+export const about: AboutContent = {
+  description:
+    "Hi, my name is Nathanel John Corpuz and welcome to my web portfolio's about page. I'm a 28-year-old Full Stack Developer from the Philippines. Below, you'll get a glimpse of my career, personality, and hobbies.",
+  items: [
+    {
+      heading: "Career History",
+      description:
+        "After 8 years in customer service, I started learning web development in February 2021 to transition into the tech industry. I always wanted to pursue a career that I feel more passionate about, and web development is the perfect choice because not only does it aligns with my personality, but also because its a new industry that evolves everyday. I'm happy to say that I'm in this for life!",
+    },
+    {
+      heading: "Personality",
+      description:
+        "Since my childhood, I've always been genuine, adventurous, curious, and exploratory. When I was at Kindergarten, my teacher asked what I wanted to be when I grow up and I remember answering excitedly, “Astronaut!”. Fast forward to now, this is still how I work as a person. Naturally curious, adventurous, unafraid to try or learn new things, and I always want to stick to the truest version of me.",
+    },
+    {
+      heading: "Hobbies",
+      description:
+        "I code almost on a daily basis, but lesser on the weekends because I spend of the day playing PC games. Currently, I'm grinding on Elden Ring, dying in the game almost every minute, but its totally worth it! I also love watching Gaia documentaries. I just got caught up with Ancient Civilizations, Deep Space, and I'm now binging Cosmic Disclosure.",
+    },
+  ],
+  endDescription:
+    "Thanks for reading this far! Feel free to contact me if you want to know more about me, hire me, ask any questions, or just chat. I'm always happy to respond!",
+};
