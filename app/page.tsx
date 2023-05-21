@@ -1,3 +1,4 @@
+import PageContentWrapper from "@/components/PageContentWrapper";
 import AboutOverview from "./_components/AboutOverview";
 import Hero from "./_components/Hero";
 import ProjectsOverview from "./_components/ProjectsOverview";
@@ -6,12 +7,12 @@ import Technologies from "./_components/Technologies";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-[100px]">
+    <PageContentWrapper>
       <Hero />
       <SkillsOverview />
       <Technologies />
       <ProjectsOverview />
       <AboutOverview />
-    </div>
+    </PageContentWrapper>
   );
 }
