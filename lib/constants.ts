@@ -306,7 +306,7 @@ export const about: AboutContent = {
     {
       heading: "Career History",
       description:
-        "After 8 years in customer service, I started learning web development in February 2021 to transition into the tech industry. I always wanted to pursue a career that I feel more passionate about, and web development is the perfect choice because not only does it aligns with my personality, but also because its a new industry that evolves everyday. I'm happy to say that I'm in this for life!",
+        "After 8 years in customer service, I started learning web development in February 2021 to transition into the tech industry. I always wanted to pursue a career that I feel more passionate about, and web development is the perfect choice because not only does it align with my personality, but also because its a new industry that evolves everyday. For these reasons, I'm happy to say that I'm in this for life!",
     },
     {
       heading: "Personality",
