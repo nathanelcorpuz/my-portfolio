@@ -208,3 +208,65 @@ export const headerLinks: LinkContent[] = [
     isNewTab: false,
   },
 ];
+
+export const skills: ListContent[] = [
+  {
+    title: "How I work",
+    items: [
+      "Loves to read existing code, figure out how to fix bugs on it, and build additional features on top while following best practices and company code directives",
+      "Does everything with heart, even the most repetitive tasks and menial tasks",
+      "Sees challenges as means for self-improvement",
+      "Unafraid to ask questions, admit mistakes, and admit biases",
+      "Mindful of others' different perspectives and biases",
+      "Passionate in learning new tools or concepts about web development",
+      "Passionate in reading official documentations",
+      "Prioritizes end-user satisfaction above all else",
+      "Prioritizes balance between urgent business needs and scalability in code decisions",
+      "Enthusiastic and optimistic towards day-to-day or project-based web development tasks",
+      "Aligns with company culture that balances the use of technology to deliver greater value to end-users while maintaining a good developer experience",
+      "Loves working alone due to INFJ personality, but still thrives in teams / pairs due to passion in web development",
+    ],
+  },
+  {
+    title: "Frontend skills",
+    items: [
+      "Can convert mockups to code efficiently and with high quality using Next.js, component libraries, and other external NPM libraries if necessary.",
+      "Can leverage Next.js App Router features like React Server Components, Route Groups, Middleware, and Parallel / Intercept Routes to implement any feature requirement",
+      "Sees challenges as means for self-improvement",
+      "Can use TypeScript to produce maintainable code that prioritizes developer experience",
+      "Can implement a fully customized UI library efficiently using a styling framework called Tailwind CSS.",
+      "Can manage any UI requirements using React.js' hooks",
+      "Can manage asynchronous server state using TanStack React Query",
+      "Can integrate backend APIs using fetch, axios, and web Request / Response APIs",
+      "Adept in using DevTools + React DevTools to debug styling, backend integrations, and client-side data storage efficiently",
+      "Adept with UI component tools like Ant Design, Material UI, Full Calendar, and Bootstrap.",
+      "Flexible in learning new tools and concepts based on business needs",
+    ],
+  },
+  {
+    title: "Backend skills",
+    items: [
+      "Can develop and deploy a scalable REST API server using Express.js and Cyclic.sh",
+      "Can use Next.js Route Handlers to quickly create co-located APIs within the Frontend project",
+      "Can efficiently test APIs using Postman / REST VSCode extension",
+      "Knowledgeable about monorepos and microservices",
+      "Knowledgeable about OAuth 2.0 architecture",
+      "Can design an ERD (Entity Relationship Diagram)",
+      "Uses Mongoose ODM to build scalable data interactions with MongoDB",
+      "Can setup and integrate a serverless database using MongoDB Atlas",
+      "Can use TypeScript for high quality developer backend experience",
+      "Can use NPM libraries such as bcrypt, jsonwebtoken, nodemailer, and date-fns",
+    ],
+  },
+  {
+    title: "Other skills",
+    items: [
+      "Knowledgeable about Git and GitHub",
+      "Always curious about CDNs, Edge computing, and serverless environments",
+      "Can deploy and manage a full stack app through Vercel",
+      "Can configure VSCode to optimize dev experience",
+      "Properly organizes tickets for easy reading of project managers / co-developers",
+      "Always keen about proper programming principles",
+    ],
+  },
+];
