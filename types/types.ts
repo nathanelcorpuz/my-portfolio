@@ -34,3 +34,8 @@ export interface AboutContent {
   items: StandardSectionItem[];
   endDescription: string;
 }
+
+export interface Theme {
+  theme: "dark" | "light";
+  reverseTheme: () => void;
+}

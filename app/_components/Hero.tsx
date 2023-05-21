@@ -15,7 +15,9 @@ export default function Hero() {
         </StandardText>
       </div>
       <div>
-        <p className="text-green-500">Currently looking for a full-time role</p>
+        <p className="text-green-600 font-bold dark:font-normal dark:text-green-500">
+          Currently looking for a full-time role
+        </p>
       </div>
       <div>
         <Button>Projects</Button>

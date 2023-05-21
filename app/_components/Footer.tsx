@@ -12,7 +12,7 @@ export default function Footer() {
             href="https://github.com/nathanelcorpuz/my-portfolio"
             target="_blank"
             referrerPolicy="no-referrer"
-            className="p-2 inline-block bg-gray-950 rounded-lg text-xs underline-offset-4 italic font-bold underline"
+            className="p-2 inline-block bg-gray-700 dark:bg-gray-950 rounded-lg text-xs  text-gray-300 underline-offset-4 italic font-bold underline"
           >
             open source!
           </a>

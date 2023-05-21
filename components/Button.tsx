@@ -12,7 +12,8 @@ export default function Button({
     return (
       <button
         className="px-4 py-2 ms-1
-      bg-white text-black
+      bg-black dark:bg-white 
+      text-white dark:text-black
         font-black uppercase
         text-sm relative group 
         hover:[transform:translateX(-5px)_translateY(5px)]
@@ -25,7 +26,7 @@ export default function Button({
         bottom-0 left-0
         [transform:translateX(-5px)_translateY(5px)]
         group-hover:[transform:translateX(-0)_translateY(0)]
-        border border-white"
+        border border-black dark:border-white"
         />
       </button>
     );
@@ -33,7 +34,8 @@ export default function Button({
   return (
     <button
       className="px-6 py-3 ms-1
-    bg-white text-black
+      bg-black dark:bg-white 
+      text-white dark:text-black
       font-black uppercase
       text-lg relative group 
       hover:[transform:translateX(-5px)_translateY(5px)]
@@ -46,7 +48,7 @@ export default function Button({
       bottom-0 left-0
       [transform:translateX(-5px)_translateY(5px)]
       group-hover:[transform:translateX(-0)_translateY(0)]
-      border border-white"
+      border border-black dark:border-white"
       />
     </button>
   );

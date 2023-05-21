@@ -18,7 +18,9 @@ export default function LinkText({
     return (
       <a
         className="uppercase font-light underline underline-offset-8 tracking-widest
-        py-2 inline-block"
+        py-2 inline-block
+        text-black dark:text-white 
+        "
         href={href}
         {...anchorProps}
       >
@@ -28,7 +30,9 @@ export default function LinkText({
   }
   return (
     <Link
-      className="uppercase font-light underline underline-offset-8 tracking-widest py-2 block"
+      className="uppercase font-light underline underline-offset-8 tracking-widest py-2 block
+      text-black dark:text-white 
+      "
       {...linkProps}
       href={href}
     >

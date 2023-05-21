@@ -7,7 +7,7 @@ export default function StandardText({
   children: React.ReactNode;
   variant?: StandardTextVariant;
 }) {
-  const common = "text-gray-400";
+  const common = "text-gray-500 dark:text-gray-400";
   if (variant === 1) {
     return <p className={`${common}`}>{children}</p>;
   }

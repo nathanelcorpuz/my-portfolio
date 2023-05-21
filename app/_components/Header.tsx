@@ -3,18 +3,20 @@
 import LinkText from "@/components/LinkText";
 import StandardText from "@/components/StandardText";
 import { headerLinks } from "@/lib/constants";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import capitalize from "@/lib/capitalize";
+import { ThemeContext } from "@/providers/ThemeProvider";
 
 export default function LayoutHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname().slice(1);
   const router = useRouter();
+  const { theme, reverseTheme } = useContext(ThemeContext);
   return (
     <>
       <header
-        className="fixed w-[100%] z-[100] bg-black flex justify-between 
+        className="fixed w-[100%] z-[100] bg-white dark:bg-black flex justify-between 
       border-b border-b-gray-500 items-center"
       >
         <div className="p-2" onClick={() => router.push("/")}>
@@ -25,8 +27,15 @@ export default function LayoutHeader() {
             <StandardText>{capitalize(pathname)}</StandardText>
           </a>
         </div>
-        <div onClick={() => setIsMenuOpen(true)} className="p-2">
-          <StandardText variant={3}>Menu</StandardText>
+        <div className="flex">
+          <div onClick={() => setIsMenuOpen(true)} className="p-2">
+            <StandardText variant={3}>Menu</StandardText>
+          </div>
+          <div onClick={() => reverseTheme()} className="p-2">
+            <StandardText variant={3}>
+              {theme === "dark" ? "Dark Mode" : "Light Mode"}
+            </StandardText>
+          </div>
         </div>
       </header>
       {isMenuOpen ? (
@@ -52,7 +61,7 @@ export default function LayoutHeader() {
                     onClick: () => setIsMenuOpen(false),
                   }}
                 >
-                  {link.text}
+                  <div className="text-white">{link.text}</div>
                 </LinkText>
               ) : (
                 <LinkText
@@ -60,7 +69,7 @@ export default function LayoutHeader() {
                   key={link.href}
                   href={link.href}
                 >
-                  {link.text}
+                  <div className="text-white">{link.text}</div>
                 </LinkText>
               )
             )}
