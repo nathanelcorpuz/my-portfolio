@@ -1,12 +1,14 @@
 import { ButtonVariant } from "@/types/types";
+import { ButtonHTMLAttributes } from "react";
 
 export default function Button({
   children,
   variant,
-  ...props
+  props,
 }: {
   children: React.ReactNode;
   variant?: ButtonVariant;
+  props?: ButtonHTMLAttributes<HTMLButtonElement>;
 }) {
   if (variant === 2) {
     return (

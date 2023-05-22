@@ -1,17 +1,17 @@
-import Link from "next/link";
+import Link, { LinkProps } from "next/link";
 import { AnchorHTMLAttributes } from "react";
 
 export default function LinkText({
   children,
-  href,
+  href = "",
   isNativeAnchor,
   anchorProps,
   linkProps,
 }: {
   children: React.ReactNode;
-  href: string;
+  href?: string;
   anchorProps?: AnchorHTMLAttributes<HTMLAnchorElement>;
-  linkProps?: AnchorHTMLAttributes<HTMLAnchorElement>;
+  linkProps?: Omit<LinkProps, "href">;
   isNativeAnchor?: boolean;
 }) {
   if (isNativeAnchor) {

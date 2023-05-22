@@ -3,6 +3,7 @@ import HeadingText from "@/components/HeadingText";
 import LinkText from "@/components/LinkText";
 import SectionWrapper from "@/components/SectionWrapper";
 import StandardText from "@/components/StandardText";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -20,11 +21,15 @@ export default function Hero() {
         </p>
       </div>
       <div>
-        <Button>Projects</Button>
+        <Link href="projects">
+          <Button>Projects</Button>
+        </Link>
       </div>
       <div className="flex gap-[30px]">
-        <LinkText href="skills">Skills</LinkText>
-        <LinkText href="contact">Contact</LinkText>
+        <LinkText href="skills#home">Skills</LinkText>
+        <LinkText isNativeAnchor href="#contact">
+          Contact
+        </LinkText>
       </div>
     </SectionWrapper>
   );

@@ -7,9 +7,9 @@ import { skills } from "@/lib/constants";
 
 export default function Skills() {
   return (
-    <PageContentWrapper>
+    <PageContentWrapper props={{ id: "#home" }}>
       {skills.map((skill) => (
-        <SectionWrapper key={skill.title}>
+        <SectionWrapper props={{ id: skill.title }} key={skill.title}>
           <HeadingText>{skill.title}</HeadingText>
           <BulletedListWrapper>
             {skill.items.map((item) => (

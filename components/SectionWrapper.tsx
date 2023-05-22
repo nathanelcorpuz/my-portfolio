@@ -12,20 +12,20 @@ export default function SectionWrapper({
 }) {
   if (gapSize === "md") {
     return (
-      <section className="p-4 flex flex-col gap-[30px]" {...props}>
+      <section className="py-[60px] px-4 flex flex-col gap-[30px]" {...props}>
         {children}
       </section>
     );
   }
   if (gapSize === "lg") {
     return (
-      <section className="p-4 flex flex-col gap-[60px]" {...props}>
+      <section className="py-[60px] px-4 flex flex-col gap-[60px]" {...props}>
         {children}
       </section>
     );
   }
   return (
-    <section className="p-4 flex flex-col gap-[15px]" {...props}>
+    <section className="py-[60px] px-4 flex flex-col gap-[15px]" {...props}>
       {children}
     </section>
   );
