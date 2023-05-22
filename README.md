@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# [My portfolio](https://nathanelcorpuz.vercel.app)
 
-## Getting Started
+Welcome to the ReadMe of my portfolio. Below, you'll find my highlights, tools, process, and additional details about this entire project.
 
-First, run the development server:
+## Highlights
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- Dark mode + theme toggle button
+- Minimalist and simple UI
+- Simple transitions
+- Fully responsive
+- Built with TypeScript
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tools
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js App Router
+- TypeScript
+- Tailwind CSS
+- Vercel
+- Figma
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Process
 
-## Learn More
+- Mockups with Figma
+- Generate copy content
+- Implement mockups with copy content
+- Add transitions and icons
+- Add theme toggle feature with Tailwind CSS
+- Test UI + responsiveness locally
+- Deploy to Vercel
 
-To learn more about Next.js, take a look at the following resources:
+## Icons
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Icons from _Iconoir Icon Library by Iconduck_ (Figma Plugin)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Future Features
 
-## Deploy on Vercel
+- Images for Skills, About, and Projects
+- Modern blocks UI for projects
+- Icons for Technologies
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Local Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Fork or Clone
+2. Run `npm i`
+3. Run `npm run dev`
+
+## Contact Me
+
+You can contact me via my email: _nathanelcorpuz@gmail.com_
+
+## Follow Me
+
+- [LinkedIn](https://www.linkedin.com/in/nathanelcorpuz/)
+- [Twitter](https://twitter.com/nathanelcorpuz)
+
+### Thank you for reading up to this point! Here's a favorite quote of mine from Seneca as a token of my appreciation:
+
+_"I don't complain about the lack of time... what little I have will go far enough. Today--this day--will achieve what no tomorrow will fail to speak about. I will aly siege to the gods and shake up the world"_
+
+--Seneca, Medea, 423-425
