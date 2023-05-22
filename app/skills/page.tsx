@@ -9,11 +9,11 @@ export default function Skills() {
   return (
     <PageContentWrapper props={{ id: "#home" }}>
       {skills.map((skill) => (
-        <SectionWrapper props={{ id: skill.title }} key={skill.title}>
+        <SectionWrapper key={skill.title} props={{ id: skill.title }}>
           <HeadingText>{skill.title}</HeadingText>
           <BulletedListWrapper>
             {skill.items.map((item) => (
-              <BulletedListItem>{item}</BulletedListItem>
+              <BulletedListItem key={item}>{item}</BulletedListItem>
             ))}
           </BulletedListWrapper>
         </SectionWrapper>

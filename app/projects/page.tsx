@@ -1,6 +1,5 @@
 import BulletedListItem from "@/components/BulletedListItem";
 import BulletedListWrapper from "@/components/BulletedListWrapper";
-import HeadingText from "@/components/HeadingText";
 import LinkText from "@/components/LinkText";
 import PageContentWrapper from "@/components/PageContentWrapper";
 import SectionWrapper from "@/components/SectionWrapper";
