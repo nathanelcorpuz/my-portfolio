@@ -12,7 +12,9 @@ export default function ProjectsOverview() {
       <HeadingText>Projects</HeadingText>
       {projects.map((project) => (
         <div key={project.slug} className="flex flex-col gap-[15px]">
-          <LinkText href={project.slug}>{project.title}</LinkText>
+          <LinkText href={"/projects#" + project.slug}>
+            {project.title}
+          </LinkText>
           <StandardText>
             A recreation of League of Legends' home page
           </StandardText>
