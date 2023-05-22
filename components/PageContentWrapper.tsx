@@ -7,7 +7,7 @@ export default function PageContentWrapper({
     <div
       className="max-w-[550px]
      lg:max-w-[800px] xl:max-w-[1000px] mx-auto
-     flex flex-col gap-[100px] pt-16"
+     flex flex-col gap-[70px] pt-16"
     >
       {children}
     </div>

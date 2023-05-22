@@ -37,32 +37,34 @@ export default function LayoutHeader() {
           >
             <StandardText variant={3}>Menu</StandardText>
           </div>
-          <div
-            onClick={() => reverseTheme()}
-            className="p-2 
-            dark:hover:bg-gray-600 hover:bg-gray-300
-             cursor-pointer flex items-center"
-          >
-            <StandardText variant={3}>
-              {theme === "dark" ? (
-                <Image
-                  src={moon}
-                  alt="moon icon for dark mode"
-                  width={20}
-                  height={20}
-                />
-              ) : (
-                <Image
-                  src={sun}
-                  alt="sun icon for light mode"
-                  width={20}
-                  height={20}
-                />
-              )}
-            </StandardText>
-          </div>
         </div>
       </header>
+      <div
+        onClick={() => reverseTheme()}
+        className="p-2 z-[100] border border-black dark:border-white 
+          bg-white dark:bg-black 
+          flex items-center justify-center
+          rounded-full w-[35px] h-[35px] 
+          fixed bottom-[10px] right-[10px]"
+      >
+        <StandardText variant={3}>
+          {theme === "dark" ? (
+            <Image
+              src={moon}
+              alt="moon icon for dark mode"
+              width={15}
+              height={15}
+            />
+          ) : (
+            <Image
+              src={sun}
+              alt="sun icon for light mode"
+              width={15}
+              height={15}
+            />
+          )}
+        </StandardText>
+      </div>
       {isMenuOpen ? (
         <div
           className="fixed top-0 right-0 

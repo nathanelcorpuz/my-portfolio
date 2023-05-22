@@ -8,7 +8,7 @@ export default function About() {
   return (
     <PageContentWrapper>
       <SectionWrapper>
-        <StandardText>{about.description}</StandardText>
+        <StandardText variant={1}>{about.description}</StandardText>
       </SectionWrapper>
       {about.items.map((item) => (
         <SectionWrapper key={item.heading}>
@@ -17,7 +17,7 @@ export default function About() {
         </SectionWrapper>
       ))}
       <SectionWrapper>
-        <StandardText>{about.endDescription}</StandardText>
+        <StandardText variant={1}>{about.endDescription}</StandardText>
       </SectionWrapper>
     </PageContentWrapper>
   );
