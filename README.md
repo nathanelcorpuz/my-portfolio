@@ -55,6 +55,6 @@ You can contact me via my email: _nathanelcorpuz@gmail.com_
 
 ### Thank you for reading up to this point! Here's a favorite quote of mine from Seneca as a token of my appreciation:
 
-_"I don't complain about the lack of time... what little I have will go far enough. Today--this day--will achieve what no tomorrow will fail to speak about. I will aly siege to the gods and shake up the world"_
+_"I don't complain about the lack of time... what little I have will go far enough. Today--this day--will achieve what no tomorrow will fail to speak about. I will lay siege to the gods and shake up the world"_
 
 --Seneca, Medea, 423-425
