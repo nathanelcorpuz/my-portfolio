@@ -7,6 +7,9 @@ import { useContext, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import capitalize from "@/lib/capitalize";
 import { ThemeContext } from "@/providers/ThemeProvider";
+import Image from "next/image";
+import moon from "@/public/moon.png";
+import sun from "@/public/sun.png";
 
 export default function LayoutHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,12 +31,34 @@ export default function LayoutHeader() {
           </a>
         </div>
         <div className="flex">
-          <div onClick={() => setIsMenuOpen(true)} className="p-2">
+          <div
+            onClick={() => setIsMenuOpen(true)}
+            className="flex items-center p-2 cursor-pointer dark:hover:bg-gray-600 hover:bg-gray-300"
+          >
             <StandardText variant={3}>Menu</StandardText>
           </div>
-          <div onClick={() => reverseTheme()} className="p-2">
+          <div
+            onClick={() => reverseTheme()}
+            className="p-2 
+            dark:hover:bg-gray-600 hover:bg-gray-300
+             cursor-pointer flex items-center"
+          >
             <StandardText variant={3}>
-              {theme === "dark" ? "Dark Mode" : "Light Mode"}
+              {theme === "dark" ? (
+                <Image
+                  src={moon}
+                  alt="moon icon for dark mode"
+                  width={20}
+                  height={20}
+                />
+              ) : (
+                <Image
+                  src={sun}
+                  alt="sun icon for light mode"
+                  width={20}
+                  height={20}
+                />
+              )}
             </StandardText>
           </div>
         </div>
@@ -45,7 +70,7 @@ export default function LayoutHeader() {
         z-[100] grid place-content-center"
         >
           <div
-            className="absolute right-0 p-2"
+            className="absolute right-0 p-2 cursor-pointer hover:bg-gray-600"
             onClick={() => setIsMenuOpen(false)}
           >
             <StandardText variant={3}>Close</StandardText>
