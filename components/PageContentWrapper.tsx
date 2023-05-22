@@ -10,7 +10,7 @@ export default function PageContentWrapper({
   return (
     <div
       className="max-w-[550px]
-     lg:max-w-[800px] xl:max-w-[1000px] mx-auto
+     lg:max-w-[800px] xl:w-[1000px] mx-auto
      flex flex-col gap-[70px] pt-16"
       {...props}
     >

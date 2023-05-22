@@ -1,5 +1,6 @@
 import BulletedListItem from "@/components/BulletedListItem";
 import BulletedListWrapper from "@/components/BulletedListWrapper";
+import HeadingText from "@/components/HeadingText";
 import LinkText from "@/components/LinkText";
 import PageContentWrapper from "@/components/PageContentWrapper";
 import SectionWrapper from "@/components/SectionWrapper";
@@ -35,6 +36,25 @@ export default function Projects() {
               </BulletedListWrapper>
             </div>
           ))}
+          <div className="flex flex-col gap-[15px]">
+            <div className="font-bold">
+              <StandardText variant={1}>Links</StandardText>
+            </div>
+            <BulletedListWrapper>
+              {project.links.map((link) => (
+                <BulletedListItem key={link.href}>
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    referrerPolicy="no-referrer"
+                    className="underline"
+                  >
+                    {link.text}
+                  </a>
+                </BulletedListItem>
+              ))}
+            </BulletedListWrapper>
+          </div>
         </SectionWrapper>
       ))}
     </PageContentWrapper>

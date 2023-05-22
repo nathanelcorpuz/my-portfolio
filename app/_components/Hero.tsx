@@ -21,7 +21,7 @@ export default function Hero() {
         </p>
       </div>
       <div>
-        <Link href="projects">
+        <Link href="projects#home">
           <Button>Projects</Button>
         </Link>
       </div>

@@ -193,7 +193,7 @@ export const aboutOverview: string[] = [
 
 export const contact: string[] = [
   "If you're interested in hiring me or working with me, please feel free to let me know via nathanelcorpuz@gmail.com",
-  "You can also follow me socially via the links below:",
+  // "You can also follow me socially via the links below:",
 ];
 
 export const socials: LinkContent[] = [
