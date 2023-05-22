@@ -41,11 +41,13 @@ export default function LayoutHeader() {
       </header>
       <div
         onClick={() => reverseTheme()}
-        className="p-2 z-[100] border border-black dark:border-white 
+        className="p-2 z-[100] border border-gray-500 dark:border-white 
           bg-white dark:bg-black 
           flex items-center justify-center
           rounded-full w-[35px] h-[35px] 
-          fixed bottom-[10px] right-[10px]"
+          fixed bottom-[10px] right-[10px]
+          cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-700
+          "
       >
         <StandardText variant={3}>
           {theme === "dark" ? (
