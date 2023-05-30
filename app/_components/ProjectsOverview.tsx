@@ -15,9 +15,7 @@ export default function ProjectsOverview() {
           <LinkText href={"/projects#" + project.slug}>
             {project.title}
           </LinkText>
-          <StandardText>
-            A recreation of League of Legends&apos; home page
-          </StandardText>
+          <StandardText>{project.description}</StandardText>
           <div className="flex gap-[15px] items-center">
             <Link href={`/projects#${project.slug}`}>
               <Button variant={2}>Read more</Button>

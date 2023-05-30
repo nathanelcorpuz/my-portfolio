@@ -56,8 +56,84 @@ export const technologies: string[] = [
 
 export const projects: Project[] = [
   {
-    slug: "league-of-legends-home-page",
-    title: "League of Legends home page",
+    slug: "mvp-web-app",
+    title: "MVP Web App (BuildMyHabit)",
+    description: "An MVP-ready web app that helps you build a habit",
+    details: [
+      {
+        title: "Main Features",
+        items: [
+          "Fully responsive",
+          "Packed with dozens of features",
+          "Includes a dedicated landing page with 3 pages",
+          "Includes a dedicated account page",
+          "Includes a dedicated web app page",
+          "Includes microservices for Resources and Auth",
+          "Custom OAuth 2.0 implementation",
+          "Full email service for registering and password reset",
+          "Uses Recharts for chart implementations",
+          "Advanced MUI Inputs with helpers and character count trackers",
+          "Clean UI / UX",
+          "Advanced Date pickers with MUI X",
+          "Complex form with clean UI and UX for adding new habit using MUI",
+        ],
+      },
+      {
+        title: "Skills Honed",
+        items: [
+          "Architecting and building an MVP for 5 months daily",
+          "Implementing an OAuth 2.0 with google-auth-library",
+          "Implementing microservices with Express.js",
+          "Implementing a chart using recharts",
+          "Implementing complex MUI components",
+          "Managing deployments via a PaaS with Cyclic.sh and Vercel",
+        ],
+      },
+      {
+        title: "Tools Used",
+        items: [
+          "React",
+          "CRA (create-react-app)",
+          "MUI + MUI X",
+          "Mongoose",
+          "MongoDB",
+          "Express",
+          "Cyclic.sh",
+          "TanStack React Query",
+          "recharts",
+          "nodemailer",
+          "jsonwebtoken",
+          "google-auth-library",
+        ],
+      },
+      {
+        title: "Dev Notes",
+        items: [
+          "This is a project I made for 5 months everyday to see how it feels to build a real product from scratch. I got to learn about many things that goes on from marketing this product to pushing through every obstacle and burnouts to ship out the features I wanted to see. The code is private for now, so please make sure to reach out to me if you want to see a full front and back demo.",
+        ],
+      },
+    ],
+    links: [
+      {
+        text: "Landing page",
+        href: "https://staging-buildmyhabit.vercel.app",
+        isNewTab: true,
+      },
+      {
+        text: "Account page",
+        href: "https://staging-account-buildmyhabit.vercel.app",
+        isNewTab: true,
+      },
+      {
+        text: "Web app",
+        href: "https://staging-app-buildmyhabit.vercel.app",
+        isNewTab: true,
+      },
+    ],
+  },
+  {
+    slug: "landing-page",
+    title: "Landing Page (League of Legends)",
     description:
       "A recreation of League of Legends' home page that highlights my ability to convert mockups to frontend code",
     details: [
@@ -114,8 +190,8 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "mealer",
-    title: "Mealer",
+    slug: "basic-web-app",
+    title: "Basic Web App (mealer)",
     description:
       "A web app for planning weekly meals and managing recipes that highlights my ability to build a full stack Next.js application",
     details: [
